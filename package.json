@@ -1,0 +1,30 @@
+{
+  "name": "angular",
+  "version": "0.0.1",
+  "description": "Dummy Angular web Site",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "reflect": "^0.1.3",
+    "systemjs": "^0.20.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-serve": "^0.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asanjeebdora/angular.git"
+  },
+  "author": "sanjeeb \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[S\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C Dora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asanjeebdora/angular/issues"
+  },
+  "homepage": "https://github.com/asanjeebdora/angular#readme"
+}
