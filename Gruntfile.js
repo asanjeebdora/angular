@@ -12,28 +12,22 @@ module.exports =function (grunt) {
     },
   },
   connect: {
-      options: {
-          port: 8012,
-          livereload: 1234,
-          // Change this to '0.0.0.0' to access the server from outside
-          hostname: 'localhost'
-      },
-      livereload: {
-          options: {
-              open: true,
-              base: [
-                  'build'
-              ]
-          }
-      },
-      dist: {
-          options: {
-              open: true,
-              base: '',
-              livereload: false
-          }
-      }
-  },
+    options: {
+        port: 9000,
+        livereload: 35729,
+        hostname: 'localhost'
+    },
+    livereload: {
+        options: {
+            open: {
+                 target: 'http://localhost:9000/index.html'
+            },
+            base: [
+                'build'
+            ]
+        }
+    }
+},
   watch: {
   js: {
     files: ['js/**/*.js'],
@@ -49,5 +43,5 @@ module.exports =function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default' , ['concat','watch','connect']);
+  grunt.registerTask('default' , ['concat','connect','watch']);
 }
